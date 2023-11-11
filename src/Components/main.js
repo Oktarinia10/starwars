@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Konten from './konten';
 
 
+
 function Main() {
   return (
     <>
@@ -38,7 +39,7 @@ function Main() {
             }}
           >
             <div className="text-content">
-              <h1 style={{ textAlign: "left" }}>NEW EPISODE!</h1>
+              <h1 style={{ textAlign: "left" }}>Star Wars Universe!</h1>
             </div>
 
             <p style={{ textAlign: "left" }}>

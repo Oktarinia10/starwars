@@ -1,46 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Detail from './detail';
 
-function Konten() {
+const Konten = () => {
+  const [films, setFilms] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('https://swapi.dev/api/films/')
+      .then((response) => {
+        setFilms(response.data.results);
+      })
+      .catch((error) => {
+        console.error('Error fetching film data:', error);
+      });
+  }, []);
+
   return (
     <>
-      
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
+     {films.map((film) => (
+  <div key={film.title} className="card">
+    <img src="./img/logo_stw.jpg" alt="Card Image" />
+    <div className="title">
+      <Link to={`/film/${film.title}`}>{film.title}</Link>
+    </div>
   </div>
-</div>
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
-  </div>
-</div>
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
-  </div>
-</div>
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
-  </div>
-</div>
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
-  </div>
-</div>
-  <div className="card">
-  <img src="./img/logo_stw.jpg"  />
-  <div className="title">
-    <h3>Card Title</h3> {/* Add a title here */}
-  </div>
-</div>
-
+      ))}
     </>
   );
 }
