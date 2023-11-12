@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import Detail from './detail';
+import { Link } from 'react-router-dom'; 
 
 const Konten = () => {
   const [films, setFilms] = useState([]);
@@ -20,11 +19,18 @@ const Konten = () => {
   return (
     <>
      {films.map((film) => (
+ 
   <div key={film.title} className="card">
+     <div className="konten">
+      
+     <Link to={`/film/${film.title}`}>
     <img src="./img/logo_stw.jpg" alt="Card Image" />
     <div className="title">
-      <Link to={`/film/${film.title}`}>{film.title}</Link>
     </div>
+    </Link>
+    <p style={{ textDecoration: 'none', textAlign:'center', fontSize:'18px' }}>{film.title}</p>
+  </div>
+  
   </div>
       ))}
     </>

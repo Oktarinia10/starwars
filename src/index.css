@@ -17,3 +17,31 @@ code {
 .text p{
   text-align: left;
 }
+.actor-list h3{
+  text-align: left;
+  color: red;
+  font-size: 50px;
+
+  
+}
+.actor-list li{
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.left-box h1{
+  text-align: left;
+  color: red;
+  font-size: 50px;
+
+  
+}
+@media (max-width: 768px) {
+  .avt img {
+    width: 100%; /* Mengubah lebar gambar menjadi 100% */
+    max-width: none; /* Menghapus maksimum lebar gambar */
+  }
+}
+

@@ -3,8 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Konten from './konten';
 
-
-
 function Main() {
   return (
     <>
@@ -46,14 +44,7 @@ function Main() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="cari" style={{ textAlign: "left" }}>
-              <img src="./Images/logo.jpg" alt="logo" />
-              <input
-                type="search"
-                placeholder="Search Here"
-                className="search"
-              />
-            </div>
+            
           </div>
           <div
             className="avt"
@@ -68,15 +59,18 @@ function Main() {
             <img
               src="./img/avatar1.png"
               alt=""
-              style={{ height: "auto", width: "638px" }}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                width: "638px",}}
             />
           </div>
         </div>
       </div>
+
       <div className="content">
       <Konten />
       </div>
-      <div className="c">dd</div>
       </div>
       
     </>
