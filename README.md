@@ -1,4 +1,4 @@
-API STARWARS : https://swapi.dev/ .\
+API STARWARS : https://swapi.dev/ 
 
 DEMO : https://starwars-one-ivory.vercel.app/
 
