@@ -20,7 +20,7 @@ code {
 .actor-list h3{
   text-align: left;
   color: red;
-  font-size: 50px;
+  font-size: 40px;
 
   
 }
@@ -34,7 +34,14 @@ code {
 .left-box h1{
   text-align: left;
   color: red;
-  font-size: 50px;
+  font-size: 40px;
+
+  
+}
+.left-box .text p{
+  text-align: left;
+  color: white;
+  font-size: 18px;
 
   
 }

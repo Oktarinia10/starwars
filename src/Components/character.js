@@ -26,7 +26,7 @@ function CharacterDetail() {
             <img src="../img/logo_stw.jpg" alt="" />
             </div>
             <div className="left-box" >
-            <h2 style={{ color:'red', fontSize:'50px' }}>Detail Character</h2>
+            <h2 style={{ color:'red', fontSize:'40px' }}>Detail Character</h2>
                 <div className="text">
                 <p><strong>Name:</strong> {character.name}</p>
                 <p><strong>Height:</strong> {character.height}</p>

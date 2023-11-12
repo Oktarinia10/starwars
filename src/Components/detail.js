@@ -37,8 +37,7 @@ function Detail() {
         </div>
         <div className="left-box" >
         <h1>{film.title}</h1>
-              <div className="text">
-                  
+              <div className="text" >
                   <p><b>Director:</b> {film.director}</p>
                   <p><b>Release Date: </b>{film.release_date}</p>
                   <p><b>Opening Crawl:</b> {film.opening_crawl}</p>
